@@ -1,0 +1,101 @@
+
+
+          <!-- Line menu -->
+          <!-- <div id="nav-btn-group" class="btn-group" role="group" aria-label="..." > 
+            <button type="button" class="btn nav-btn btn-default">Artists to Watch</button>
+            <button type="button" class="btn nav-btn btn-default">Features</button>
+            <button type="button" class="btn nav-btn btn-default">Player</button>
+            <button type="button" class="btn nav-btn btn-default">About</button>
+            <button type="button" class="btn nav-btn btn-default">Contact</button>
+            <button type="button" class="btn nav-btn btn-default">In-Case-You-Missed-It</button> 
+          </div> -->
+
+        <!-- Drop Down Menu -->
+          <!--<div class=" black" style="height: 100%; width:50px; padding: 0px; margin:0px; float:right">
+            <button class="vcenter white" type="button" data-toggle="dropdown">
+              <span class="caret"></span>
+            </button>
+          -->
+              
+            <!--<ul class-"dropdown-menu">
+                <li><a href="#">Artists to Watch</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Player</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="#incase">In-Case-You-Missed-It</a></li>
+              </ul>-->
+   
+            <!-- Navigation bar at top of page -->
+      <!-- <nav class="navbar navbar-default row" style="height: 70px">
+        <div class="col-lg-1" style="float: left; height: 100%; width: auto;">
+          <a href="Circus.html">
+            <img alt="Home-Logo" style="height: 100%"  class="d-inline-block align-top" src="elephant.jpg">
+          </a>
+        </div>
+        <div id="title-btn-div" class="col-lg-10">
+          <div class="btn-group" id="nav-btn-group" role="group" aria-label="..."> 
+              <button type="button" class="btn title-btn btn-default">Artists to Watch</button>
+              <button type="button" class="btn title-btn btn-default">Features</button>
+              <button type="button" class="btn title-btn btn-default">Player</button>
+              <button type="button" class="btn title-btn btn-default">About</button>
+              <button type="button" class="btn title-btn btn-default">Contact</button>
+              <button type="button" class="btn title-btn btn-default">In-Case-You-Missed-It</button> 
+          </div>
+        </div>
+      </nav> -->
+
+                    <!-- Example of button that works
+            <button type="button" class="nav navbar-nav navbar-toggle " data-toggle="collapse" data-target="#collapse1">
+                Click
+            </button>
+          <div id="collapse1" class="navbar-collapse collapse">
+            <ul>
+              <li style="float-right"><button type="button" class="nav navbar-nav navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="caret"></span>
+            </button>
+            <div id="navbar-menu" class="collapse navbar navbar-collapse">
+              <ul class="navbar-nav nav">
+                <li class="nav-btn"><a href="#">Artists to Watch</a></li>
+                <li class="nav-btn"><a href="#">Features</a></li>
+                <li class="nav-btn"><a href="#">Player</a></li>
+                <li class="nav-btn"><a href="about">About</a></li>
+                <li class="nav-btn"><a href="contact">Contact</a></li>
+                <li class="nav-btn"><a href="#incase">In-Case-You-Missed-It</a></li>
+              </ul>
+            </div> One</li>
+              <li  style="float-right">Two</li>
+              <li  style="float-right">Three</li>
+              <li  style="float-right">Two</li>
+              <li  style="float-right">Three</li>
+            </ul>
+          </div> -->
+
+    <!--<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214690999&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header" style=" border: 3px solid green;">
+            <table style="width: 100%; background-color: yellow;">
+              <tr>
+                <td style="background-color: green;">
+                  <a class="navbar-brand" href="http://www.google.com">
+                    <img alt="Home-Logo" width="70" height="auto" class="d-inline-block align-top" src="elephant.jpg">
+                  </a>
+                </td>
+                <td style="background-color: pink; height: 1px;  border: 3px solid white;">
+                <div class="btn-group" id="nav-buttons" style="float: right" role="group" aria-label="..."> 
+                  <button type="button" class="btn btn-default">Artists to Watch</button>
+                  <button type="button" class="btn btn-default">Features</button>
+                  <button type="button" class="btn btn-default">Player</button>
+                  <button type="button" class="btn btn-default">About</button>
+                  <button type="button" class="btn btn-default">Contact</button>
+                  <button type="button" class="btn btn-default">In-Case-You-Missed-It</button> 
+                </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </nav> -->

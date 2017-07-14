@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>______</title>
+
+    <!-- Bootstrap -->
+    <link href="C:/Users/Kevin/Downloads/Desktop/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="elephant_icon.ico" rel="shortcut icon"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Bottom Bar Links -->
+      <div class="row">
+        <a href="file:///C:/Users/Kevin/Documents/CircusLevel/Circus.html" class="btn bottom-bar-link col-xs-20" role="button"> Home </a>
+        <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> Contact </a>
+        <a href="https://www.past.com" class="btn bottom-bar-link col-xs-20" role="button"> Past </a> 
+        <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> Soundcloud </a>
+        <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> Webcert </a> 
+      </div>
+
+      <!-- End page decorations -->
+      <div class="row .tile-sm .tile-md .tile-lg" style="background-color: pink; height: 100px">
+        <div class="col-xs-6 col-md-8" style="color:white; background-color: green;"> 3/4 Sized Column</div>
+        <div class="col-xs-6 col-md-4" style="color:white; background-color: grey;"> 1/4 Sized Column</div>
+      </div>
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
