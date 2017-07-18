@@ -14,6 +14,7 @@
 
     <!-- Bootstrap -->
     <link href="KevinJASD.github.io/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
     <link href="elephant_icon.ico" rel="shortcut icon"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,6 +25,8 @@
     <![endif]-->
     
   </head>
+
+  <!--- Nav bar -->
   <body>
     <nav class="navbar navbar-toggleable-md navbar-fixed-top"> 
       <div class="container height100">
@@ -49,36 +52,43 @@
     </nav>
   
     <div id="pagebody-container" class="container">
+     
       <!-- Paisley image buffer -->
       <div class="row" >
-        <div class="col-xs-3" style="padding: 0px;">
+        <div class="col-xs-2" style="padding: 0px;">
           <img class="pic-band" src="paisley_4.jpg"> 
         </div>
-        <div class="col-xs-3" style="padding: 0px;">
+        <div class="col-xs-2" style="padding: 0px;">
           <img class="pic-band" src="paisley_4.jpg"> 
         </div>
-        <div class="col-xs-3" style="padding: 0px;">
+        <div class="col-xs-2" style="padding: 0px;">
           <img class="pic-band" src="paisley_4.jpg"> 
         </div>
-        <div class="col-xs-3" style="padding: 0px;">
+        <div class="col-xs-2" style="padding: 0px;">
+          <img class="pic-band" src="paisley_4.jpg"> 
+        </div> 
+        <div class="col-xs-2" style="padding: 0px;">
+          <img class="pic-band" src="paisley_4.jpg"> 
+        </div> 
+        <div class="col-xs-2" style="padding: 0px;">
           <img class="pic-band" src="paisley_4.jpg"> 
         </div> 
       </div> 
 
       <!-- Artist to Watch -->
       <div id="a_to_watch-div" class="hrzntl-center">
-        <div class="row" style="height: 50%;">
+        <div class="row" style="height: 33.3%;">
           <div id="artist-to-watch" class="col-xs-12">
             <span id="lrg-text">Artist to Watch</span>
           </div>
         </div>
-        <div class="row" style="height: 50%">
+        <div class="row" style="height: 33.4%">
           <div id="artist-to-watch" class="col-xs-12">
             <img alt="Artist to Watch" style="height: 
             350px" src="C:\Users\Kevin\Pictures\MickJenkins.png">
           </div>
         </div>
-        <div class="row" style="height: 50%">
+        <div class="row" style="height: 33.3%">
           <div id="artist-to-watch" class="col-xs-12">
             <span id="med-text">Mick Jenkins</span>
           </div>
@@ -86,7 +96,7 @@
       </div>
 
       <!-- Tiles -->
-      <div class="row">
+      <div class="row tile-row">
         <div class="col-xs-12 col-md-6" style="background-color: black;">
           <div id="block-text"class="tile_photo_div">
             <img class="tile_photo" src="http://media.vanityfair.Com/photos/57fd20e30c3020dd42f7859d/master/pass/t-donald-glover-fanfair-november-2016.jpg">
@@ -100,7 +110,7 @@
           <div class="tile-text">Jay-Z returns Hard</div>
         </div>
       </div>
-      <div class="row">
+      <div class="row tile-row">
         <div class="col-xs-12" style="background-color: #FF5733">
           <div class="tile_photo_div">
             <img class="tile_photo" src="https://video-images.vice.com/articles/58d14dfdbb77a37f1a3fa134/lede/1490114156733-2017_Vince_staples_-2199b.jpeg?crop=1xw:0.8429070929070929xh;center,center&resize=1050:*"> 
@@ -108,7 +118,7 @@
           <div class="tile-text">Vince Staples Lays Electro on Rap</div>
         </div>
       </div>
-      <div class="row">
+      <div class="row tile-row">
         <div class="col-xs-12" style="background-color: #8a31aa">
           <div class="tile_photo_div">
             <img class="tile_photo" src="http://danceandrave.com/wp-content/uploads/2017/04/music-festival-crowd.jpg"> 
@@ -116,7 +126,7 @@
           <div class="tile-text">Loss in Album Sales But Rise In Festival Attendance?</div>
         </div>
       </div>
-      <div class="row">
+      <div class="row tile-row">
         <div class="col-xs-12" style="background-color: #2bdb4c">
           <div class="tile_photo_div">
             <img class="tile_photo" src="http://www.xxlmag.com/files/2017/05/Drake-DVD.jpeg?w=630&h=420&zc=1&s=0&a=t&q=89"> 
@@ -124,7 +134,7 @@
           <div class="tile-text">More Life is a Terrible Album</div>
         </div>
       </div>
-      <div class="row">
+      <div class="row tile-row">
         <div class="col-xs-12" style="background-color: #f4e91a">
           <div class="tile_photo_div">
             <img class="tile_photo" src="https://f4.bcbits.com/img/0006625640_10.jpg">
@@ -134,9 +144,9 @@
       </div>
 
       <!-- In Case You Missed It -->
-      <div class="row">
+      <div class="row" style="border:2px solid black">
         <div id="incase" class="col-xs-12 full-size">
-            <span id="listening-to">in case you missed it.....</span>
+            <span id="missed-it-text">in case you missed it.....</span>
             <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214690999&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
         </div>
       </div>
@@ -151,10 +161,11 @@
       <!-- Bottom Bar Links -->
       <div class="row">
         <a href="file:///C:/Users/Kevin/Documents/CircusLevel/Circus.html" class="btn bottom-bar-link col-xs-20" role="button"> Home </a>
-        <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> Contact </a>
-        <a href="https://www.past.com" class="btn bottom-bar-link col-xs-20" role="button"> Past </a> 
+        <a href="https://www.past.com" class="btn bottom-bar-link col-xs-20" role="button"> Lyrics </a> 
         <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> Soundcloud </a>
-        <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> Webcert </a> 
+        <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> In Case You Missed It </a> 
+        <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> Contact </a>
+        <!-- <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> Webcert </a> -->
       </div>
 
       <!-- End page decorations -->

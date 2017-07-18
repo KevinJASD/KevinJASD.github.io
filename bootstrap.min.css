@@ -8110,11 +8110,7 @@ button.close {
     height: 300px;
     display: block;
 }
-#listening-to {
-    color: blue;
-    font-size: 4.5em;
-    font-family: Verdana;
-}
+
 #artist-to-watch {
     height: 50%;
     display: block;
@@ -8151,9 +8147,6 @@ button.close {
 #nav-menu-btn>li>a {
     color: white;
 }
-
-
-
 .tile-text {
     top: 50%;
     color: white;
@@ -8162,6 +8155,13 @@ button.close {
     display: inline-block;
     transform: translateY(-50%);
 }
+@media (max-width: 768px) {
+    .tile-text { font-size: 1.5em; }
+}
+@media (max-width: 400px) {
+    .tile-text { font-size: .5em; }
+}
+
 .hrzntl-center {
     text-align: center;
 }
@@ -8239,6 +8239,17 @@ button.close {
     /*line-height: 200px;*/
     margin: 15px 20px 15px 0px;
 }
+#missed-it-text{
+    color: blue;
+    font-size: 4.5em; 
+}
+@media (max-width: 768px) {
+    #missed-it-text { font-size: 3em; }
+}
+@media (max-width: 400px) {
+    #missed-it-text { font-size: 3em; }
+}
+
 /* Meant for media queries to adjust tile height */
 a.bottom-bar {
     font-weight: bold;
@@ -8268,20 +8279,12 @@ body { padding-top: 70px; }
 
 /* Blank media queries for responsive screen size */
 @media (min-width:992px) {
-    #lrg-text {
-        font-size: 5.9em;
-    }
-    #med-text {
-        font-size: 7.5em;
-    }
+    #lrg-text { font-size: 5.9em; }
+    #med-text { font-size: 7.5em; }
 }
 @media (min-width:1200px) {
-    #lrg-text {
-        font-size: 7.8em;
-    }
-    #med-text {
-        font-size: 6.1em;
-    }
+    #lrg-text { font-size: 7.8em; }
+    #med-text { font-size: 6.1em; }
 }
 @media (min-width:768px) {
     .navbar  {
@@ -8327,13 +8330,16 @@ body { padding-top: 70px; }
         display: block;
     }
 }
-body, 
-#pagebody-container {
+body,
+#pagebody-container  {
     background-color: #fffcfc;
-}
-div.tile-text> {
-    padding: 20px;
 }
 #navbar-menu {
     float: right;
+}
+body { font-family: Verdana; }
+
+.tile-row { 
+    margin: 2px 0px;
+    border: 2px solid #000001;
 }
