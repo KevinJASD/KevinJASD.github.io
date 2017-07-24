@@ -1,0 +1,102 @@
+/**** Iconmoon */
+
+.ptl { padding-top: 1.5em; }
+.clearfix:after { clear: both; }
+
+.glyph {
+  font-size: 30px;
+ /* padding-bottom: 1em; */
+  float: right;
+  overflow: hidden;
+  position: relative;
+  padding-top: 16px;
+}
+
+.glyph>a:hover { color: blue; }
+.glyph>a { text-decoration: none; }
+.glyph>a,
+.glyph>a:focus {
+    color: inherit;
+}
+
+.nav-icon {
+  color: inherit;
+}
+/*
+.icon-soundcloud {
+  padding-top: 14px;
+}*/
+.icon-headphones .glyph{
+  padding-top: 10px;
+}
+.icon-headphones {
+  font-size: 20px;
+}
+
+.mal, .mhl {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.clearfix:before, 
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ofysak');
+  src:  url('fonts/icomoon.eot?ofysak#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ofysak') format('truetype'),
+    url('fonts/icomoon.woff?ofysak') format('woff'),
+    url('fonts/icomoon.svg?ofysak#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-soundcloud:before {
+  content: "\eac3";
+}
+.icon-soundcloud2:before {
+  content: "\eac4";
+}
+
+/*
+.icon-headphones,
+.icon-music,
+.icon-circle-down,
+.icon-youtube,
+.icon-soundcloud,
+.icon-soundcloud2 {
+    float: right;
+    height: 100%;
+}
+*/

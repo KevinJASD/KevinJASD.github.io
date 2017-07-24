@@ -13,8 +13,9 @@
 
 
     <!-- Bootstrap -->
-    <link href="KevinJASD.github.io/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">  <!-- for running local -->
+    <link href="KevinJASD.github.io/bootstrap.min.css" rel="stylesheet">  <!-- for running github -->
+    <link href="iconmoon-font.css" rel="stylesheet">  <!-- for glyphs -->
     <link href="elephant_icon.ico" rel="shortcut icon"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,20 +30,27 @@
   <!--- Nav bar -->
   <body>
     <nav class="navbar navbar-toggleable-md navbar-fixed-top"> 
-      <div class="container height100">
-        <div class="navbar-header height100" style="width:100%">
-          <a class="navbar-brand height100" href="#">
+      <div class="container height100" style="position: relative;">
+        <div class="navbar-header height100" style="position: relative; width:100%">
+          <a class="navbar-brand height100" href="circus.html">
             <img id="logo" class="d-inline-block align-top" alt="Home-Logo" src="elephant.jpg"> Circus Level
           </a>    
+          
+
+          <!-- Icons -->
+          <ul class="clearfix mh1 pt1 height100" style="float:right">
+            <li class="glyph height100">
+              <a href="http:/www.soundcloud.com">
+                <span class="nav-icon icon-soundcloud"></span>
+              </a>
+            </li>
+          </ul>
+         
+          <!--
           <button type="button" class="nav navbar-nav navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="caret"></span>
           </button>
-
-         <!-- <i class="icomoon icon-soundcloud" style="float:right"></i> -->
-          <img class="glyph-nav" src="IcoMoon-Free-master\SVG\452-soundcloud.png">
-          
-          
           <div id="navbar-menu" class="collapse navbar-collapse">
             <ul class="navbar-nav nav">
               <li class="nav-btn"><a href="#">Artists to Watch</a></li>
@@ -51,7 +59,8 @@
               <li class="nav-btn"><a href="contact.html">Contact</a></li>
               <li class="nav-btn"><a href="#incase">In-Case-You-Missed-It</a></li>
             </ul>
-          </div> 
+          </div>  
+        -->
           
         </div>
       </div>
@@ -179,7 +188,7 @@
 
       <!-- Bottom Bar Links -->
       <div class="row">
-        <a href="file:///C:/Users/Kevin/Documents/CircusLevel/Circus.html" class="btn bottom-bar-link col-xs-20" role="button"> Home </a>
+        <a href="Circus.html" class="btn bottom-bar-link col-xs-20" role="button"> Home </a>
         <a href="https://www.past.com" class="btn bottom-bar-link col-xs-20" role="button"> Lyrics </a> 
         <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> SoundCloud </a>
         <a href="https://www.google.com" class="btn bottom-bar-link col-xs-20" role="button"> In Case You Missed It </a> 
