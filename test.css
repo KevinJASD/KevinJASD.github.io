@@ -1,6 +1,6 @@
 html,body {
   min-height: 100%;
-  positive: relative;
+  positive: absolute;
 }
 
 html { border: 2px solid black; }
