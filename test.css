@@ -1,6 +1,6 @@
 html,body {
   min-height: 100%;
-  position: absolute;
+  position: block;
 }
 
 html { border: 2px solid black; }
