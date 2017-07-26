@@ -8486,7 +8486,7 @@ body,
     border: 2px solid black;
     margin: 0px;
     padding: 0px;
-    min-width: 50px;
+    
     position: absolute;
 }
 #circle-wrapper {
