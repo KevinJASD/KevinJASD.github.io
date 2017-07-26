@@ -8,7 +8,8 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 html {
-    font-family: sans-serif;
+/*   font-family: sans-serif; */
+    font-family:  Verdana;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
 }
@@ -8250,7 +8251,7 @@ a.shade-link:visited {
     /*background-color: #279AF1;*/
     /*background-color: #032B49;*/
     background-color: #0D3451;
-    border-bottom: 10px solid #010009;
+    border-bottom: 2px solid #010009;
 }
 .hcenter {
     left: 50%;
@@ -8304,13 +8305,11 @@ a.bottom-bar {
     text-align: center;
     line-height: 40px;
 }
-a.bottom-bar-link:hover {
-    color: blue;
-}
-.bottom-bar-btns>div:hover {
+
+.bottom-bar-link>div:hover {
     background-color: black;
 }
-.bottom-bar-btns>div:hover .bottom-bar-link{
+.bottom-bar-link>div:hover {
     color: white;
 }
 a.bottom-bar-link:link,
@@ -8366,15 +8365,22 @@ body { padding-top: 70px; }
         display: block;
     }
 }
+
+html, body {
+  height: 100%;
+}
+body {  /* allows for flush/sticky footer (https://css-tricks.com/couple-takes-sticky-footer/)*/
+  display: flex;
+  flex-direction: column;
+}
+#pagebody-container { flex: 1 0 auto; } /* allows for flush/sticky footer (https://css-tricks.com/couple-takes-sticky-footer/)*/
+
 body,
-#pagebody-container  {
+#pagebody-container {
     background-color: #f3f3e9;
 }
-#navbar-menu {
-    float: right;
-}
-body { font-family: Verdana; }
 
+#navbar-menu { float: right; }
 .glyph-nav {
     position: relative;
     float: right;
@@ -8420,7 +8426,6 @@ body { font-family: Verdana; }
     .spacer-right {
         display: none;
     }
-
 }
 @media (max-width:768px) {
     .pagebody { display: block; }
@@ -8437,7 +8442,6 @@ body { font-family: Verdana; }
 .spacer-mid { height: 85px }
 .spacer-right { height: 44px }
 
-
 #incase {
     position: absolute;
     top: 0px;
@@ -8446,7 +8450,6 @@ body { font-family: Verdana; }
 #incase-wrapper {
     height: 300px;
     position: relative;
-    /*border: 3px solid black;*/
 }
 .incase-backdrop {
     top: 4%;
@@ -8456,18 +8459,18 @@ body { font-family: Verdana; }
     vertical-align: top;
     background-color: pink;
 }
-.bottom-bar-btns>.col-xs-20 { text-align: center; }
-.bottom-bar-btns>.col-xs-20 {
+.bottom-bar-btns>a>.col-xs-20 { 
+    text-align: center;
     border-right: 1.5px solid #ccccb3;
-}
-.bottom-bar-btns>.col-xs-20:last-child {
-    border-right: none;
-}
+} 
+.bottom-bar-btns>a:last-child .col-xs-20{ border-right: none; }
 
 .icon-bar>li { margin: 0px 10px; }
 .icon-bar>li:first-child { margin-right: 0px; }
 .icon-bar>li:last-child { margin-left: 0px; }
 .bottom-bar-link { font-size: 75% }
+
+.bottom-bar { width: 100%; }
 
 
 /********* Intended for testing purposes *****/

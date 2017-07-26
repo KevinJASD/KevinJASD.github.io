@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>about</title>
+    <title>Lyrics</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.min.jss"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.js"></script>
+
 
     <!-- Bootstrap -->
     <link href="bootstrap.min.2.css" rel="stylesheet">  <!-- for running local -->
@@ -21,54 +26,52 @@
     <![endif]-->
     
   </head>
+
+  <!--- Nav bar -->
   <body>
-
-      <nav class="navbar navbar-toggleable-md navbar-fixed-top"> 
-        <div class="container height100">
-          <div class="navbar-header height100" style="width:100%">
-            <a class="navbar-brand height100" href="circus_2.html">
-              <img id="logo" class="d-inline-block align-top" alt="Home-Logo" src="elephant.jpg"> Circus Level
-            </a>    
-            <button type="button" class="nav navbar-nav navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="caret"></span>
-            </button>
-            <div id="navbar-menu" class="collapse navbar-collapse">
-              <ul class="navbar-nav nav">
-                <li class="nav-btn"><a href="#">Artists to Watch</a></li>
-                <li class="nav-btn"><a href="#">Features</a></li>
-                <li class="nav-btn"><a href="#about">About</a></li>
-                <li class="nav-btn"><a href="contact">Contact</a></li>
-                <li class="nav-btn"><a href="#incase">In-Case-You-Missed-It</a></li>
-              </ul>
-            </div> 
-          </div>
+    <nav class="navbar navbar-toggleable-md navbar-fixed-top"> 
+      <div class="container height100" style="position: relative;">
+        <div class="navbar-header height100" style="position: relative; width:100%">
+          <a class="navbar-brand height100" href="circus_2.html">
+            <img id="logo" class="d-inline-block align-top" alt="Home-Logo" src="elephant.jpg"> Circus Level
+          </a>    
+        
+          <!-- Icons -->
+          <ul class="icon-bar clearfix mh1 pt1 height100">
+            <li class="glyph height100">
+                <a href="http:/www.soundcloud.com" class="nav-icon icon-soundcloud">
+                </a>
+            </li>
+            <li class="glyph height100">
+                <a href="#incase" class="nav-icon icon-headphones" style="padding: 0px; line-height: 100%;">
+                </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-
+      </div>
+    </nav>
 
     <div id="pagebody-container" class="container">
-      <h2> we just deliver good music. <span style="text-decoration: underline">only good music.</span></h2>
-
-      <p>We'll give you the music, our opinions and anything interesting we find. Everything else can be left for Pitchfork. Our team is made of individuals that have love the music they listen to and who want to share it. Only the best. This is Circus Level.</p>
     </div>
+    
 
 
 
-   <div class="container-fluid bottom-bar"> 
+    
+    <div class="container-fluid bottom-bar"> 
      
      <!-- Bottom Bar Links -->
       <div class="row white bottom-bar-btns">
         <a href="circus_2.html" class="bottom-bar-link" role="button">
           <div class="col-xs-20"> Home </div>
         </a>
-        <a href="lyrics.html" class="bottom-bar-link" role="button">
+        <a href="#" class="bottom-bar-link" role="button">
           <div class="col-xs-20"> Lyrics </div>
         </a> 
         <a href="soundcloud.com" class="bottom-bar-link" role="button">
           <div class="col-xs-20"> SoundCloud </div>
         </a>
-        <a href="#" class="bottom-bar-link" role="button">
+        <a href="about.html" class="bottom-bar-link" role="button">
           <div class="col-xs-20"> About Us </div>
         </a> 
         <a href="contact.html" class="bottom-bar-link" role="button">
@@ -82,6 +85,8 @@
         <div class="col-xs-4" style="height: 50px; background-color: grey"></div>
       </div>
     </div>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

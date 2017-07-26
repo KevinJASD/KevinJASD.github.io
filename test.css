@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+html { border: 2px solid black; }
+body { border: 2px dashed purple; }
+
+.content {
+  flex: 1 0 auto;
+
+  background-color: green;
+}
+
+.footer {
+  height: 120px;
+}
