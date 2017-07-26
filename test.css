@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body {
   height: 100%;
 }
@@ -18,3 +19,16 @@ body { border: 2px dashed purple; }
 .footer {
   height: 120px;
 }
+=======
+html,body {
+  min-height: 100%;
+}
+
+html { border: 2px solid black; }
+body { border: 3px solid blue; }
+
+.bottom-bar {
+  float: bottom;
+  border: 2px solid cyan;
+}
+>>>>>>> ad436db5685cc5772bbf8e3e41a40ec25ef46b4a

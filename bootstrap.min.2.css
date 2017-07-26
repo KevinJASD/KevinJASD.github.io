@@ -5169,8 +5169,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
     height: 100px;
     width: auto;
     padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
+    /*font-size: 18px;
+    line-height: 20px; */ /*here */
     color: white;
 }
 
@@ -8470,7 +8470,32 @@ body,
 .icon-bar>li:last-child { margin-left: 0px; }
 .bottom-bar-link { font-size: 75% }
 
-.bottom-bar { width: 100%; }
+.bottom-bar { width: 100%; } /* because of sticky footer changes */
+
+#circle-logo {
+    background-color: white;
+    border: 1px solid grey;
+    width: 100%;
+    display: inline-block;
+    padding-top: 100%;
+    position: absolute;
+}
+.navbar-header { border: 2px solid blue;}
+
+.navbar-brand {
+    border: 2px solid black;
+    margin: 0px;
+    padding: 0px;
+    min-width: 50px;
+    position: absolute;
+}
+#circle-wrapper {
+    width: 50px;
+    padding-top: 100%;
+    display: inline-block;
+    border: 5px solid green;
+    position: relative;
+}
 
 
 /********* Intended for testing purposes *****/
