@@ -1,0 +1,1 @@
+<p>Javascript put this text into the div!</p>
