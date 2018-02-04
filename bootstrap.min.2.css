@@ -8346,7 +8346,9 @@ body {  /* allows for flush/sticky footer (https://css-tricks.com/couple-takes-s
   display: flex;
   flex-direction: column;
 }
-#pagebody-container { flex: 1 0 auto; } /* allows for flush/sticky footer (https://css-tricks.com/couple-takes-sticky-footer/)*/
+#pagebody-container { 
+    flex: 1 0 auto;     /* allows for flush/sticky footer (https://css-tricks.com/couple-takes-sticky-footer/)*/
+} 
 
 body,
 #pagebody-container {
@@ -8481,13 +8483,8 @@ body,
     transform: translateY(-50%);
     display: none;
 }
-.page-title {
-    margin-top: 7%;
-    margin-bottom: 5%;
-}
-.aritcle-page-img {
-    margin-bottom: 15px;
-}
+
+/*
 .article-header {
     width: 85%;
     margin-left: auto;
@@ -8507,7 +8504,6 @@ body,
     margin-bottom: 3%;
     border: 2px solid #2b0606;
     box-shadow: 10px 10px 10px #888888;
-   /* box-shadow: 20px 20px;*/
 }
 .article-banner { 
     height: 30px;
@@ -8561,11 +8557,10 @@ body,
 .article:first-letter {
     font-size: 2.5em;
 }
-
+* DUPLICATE CODE */
 #circle-wrapper {
     width: 50px;
     padding-top: 100%;
->>>>>>> ea4f771028b9f7cc6e35871df5a285bd7c2da860
     display: inline-block;
     position: relative;
     top: 50%;
@@ -8590,8 +8585,9 @@ body,
     text-align: center;
     background-color: white;
     border: 2px solid #e6e6e6;
+    position: relative;
 }
-.article-img {
+#article-img{
     height: auto;
     width: auto;
     max-width: 76%;
@@ -8608,7 +8604,7 @@ body,
     background-color: #474056;
     box-shadow: 5px 5px 4px #f0f0f0;
 }
-.article-title {
+#article-title {
     margin-left:10%;
     margin-bottom: 6%;
     color: #272727;
@@ -8622,12 +8618,29 @@ body,
     margin-bottom: 6%;
     margin-top: 2%;
     background-color: #fcfcfc!important;
+    position: relative!important;
 }
 .article-text {
-    font-size: 1.2em;
+    font-size: .5em;
     line-height: 2;
     font-weight: 550;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+@media(min-width: 1500px) {
+    .article-text {
+        font-size: .9em;
+    }
+    .article {
+        width: 64%;
+    }
+}
+@media(min-width: 450px) {
+    .article-text {
+        font-size: .9em;
+    }
+    .article {
+        width: 64%;
+    }
 }
 .home-link:link,
 .home-link:visited,
@@ -8642,10 +8655,9 @@ body,
     padding: 0px;
     float:left;
     display: inline-block;
-
 }
 .article { 
-    width: 80%; 
+    width: 90%; 
     display: block;
     margin: auto;
 }
@@ -8668,7 +8680,7 @@ body,
 
 td {
     vertical-align: top; 
-    padding: 0px
+    padding: 0px;
 }
 /*.tile-row { 
     margin: 2px 0px;

@@ -8,13 +8,13 @@
     <title>article</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="dist/js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="dist/js/bootstrap.js"></script>
 
 
     <!-- Bootstrap -->
     <link href="bootstrap.min.2.css" rel="stylesheet">  <!-- for running local -->
-    <link href="KevinJASD.github.io/bootstrap.min.2.css" rel="stylesheet">  <!-- for running github -->
+    <!--<link href="KevinJASD.github.io/bootstrap.min.2.css" rel="stylesheet"> --> <!-- for running github -->
     <link href="iconmoon-font.css" rel="stylesheet">  <!-- for glyphs -->
     <link href="elephant_icon.ico" rel="shortcut icon"/>
 
@@ -24,6 +24,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
     
   </head>
 
@@ -31,8 +33,22 @@
   <body>
     <nav class="navbar navbar-toggleable-md navbar-fixed-top"> 
       <div class="container height100" style="position: relative;">
-        <div class="navbar-header height100" style="position: relative; width:100%">
-       
+        <div class="test height100" style="width:100%">
+          <a class="home-link" href="circus_2.html">
+            <div class="circle-logo"></div>
+            <span>Circus Level</span>   
+          </a>
+           <!-- <img id="logo" class="d-inline-block align-top" alt="Home-Logo" src="elephant.jpg">
+          http://www.mickjenkins.com/
+               <div class="navbar-header height100" style="position: relative; width:100%">
+          <a class="navbar-brand height100" href="circus_2.html">
+           <img id="logo" class="d-inline-block align-top" alt="Home-Logo" src="elephant.jpg">
+
+           <div id="circle-logo" class="img-circle"></div>
+
+           <p style="display: inline-block">Circus Level</p>
+           -->
+
           <!-- Icons -->
           <ul class="icon-list clearfix mh1 pt1">
             <li class="glyph">
@@ -49,38 +65,26 @@
     </nav>
 
     <div id="pagebody-container" class="container article-container">
-      <!--<img class="article-page-img" src"">
-      <hi id="article-page-title"></h1>
-      <p id="article-text"></p>
-      <script type="text/javascript" src="donald.js"></script>-->
-
       <div class="article-banner"></div>
       <div class="article-header">
-        <img class="article-img" src="https://cdnph.upi.com/ph/st/th/8631478538164/2016/upi/a42cfe55775589649bbb7ea457a45e24/v1.5/New-Childish-Gambino-album-titled-Awaken-My-Love-found-listed-on-Amazon.jpg?lg=5">
-        <div style="text-align: center; width: 85%;">
-          <h1 class="article-title">Donald Glover was never Childish Gambino</h1>
-          <p style="display: inline-block; width: 100%; text-align: left; margin-left: 10%">Author: Sammie D.<br>8/1/2017</p>
+        <img id="article-img" src="">
+          <h1 id="article-title"></h1>
+          <p style="display: inline-block; width: 100%; text-align: left; margin-left: 10%">
+            <span id="author"></span><br>
+            <span id="date"></span>
+          </p>
         </div>
         <hr width="85%">
-      </div>
-      <div class="article">
-        <p class="article-text">Childish Gambino's retirement <span class="disappear">The news of Donald Glover retiring Childish Gambino</span> is heartbreaking for fans (both from <it>'Sick Boi'</it> fans and <it>'Awaken My Love'</it>) and the branch unconventional hip-hop. With the release of the <it>'Awaken My Love'</it>, Donald Glover has reached significant mainstream success as an artist. Along with his music career, his writing and acting careers exploded with the premiere of 'Atlanta' and landing the role of Lando in the new Star Wars film. Donald Glover is in full swing of his renaissance pinnacle (which we hope will never stop). And although Childish Gambino wont be around anymore Donald Glover sure will be. It's the distinction between Gambino and Glover has never been more clear.</p>
-        <br>
-        <p class="article-text">Donald Glover is a ever-evolving person and Childish Gambino is an embodiment. As an embodiment Gambino belongs to a certain time. The social context of that time, and temporal struggles and challenges for Glover at that time are all topics which he uses in his music (Awaken My Love was about the birth of his child). This is an inextricable truth of Gambino's existence means when the time for the things which he embodies comes to an end so does he. Some lyrics dealth with timesless topics such as <span class-"disappear">What's a leader if he isn't relucant?" or </span> "the world saying who you are because you're young and black". Race will always be, for the forseeable future, relavent to any particular person and such a person will be able to understand that lyric just as someone did in 2011 or even now. But, timeless topics such as race can't support a never-ending career.  For Gambino those ideas had their time and therefore came to an end. Donald Glover on the other hand, is continually evolving in different artforms and rebirthing ideas of race in 'Atlanta'. <p>
-        <br>
-        <p class="article-text">However, the fact is his music <it>did</it> have a timeless quality to it. His unique and textured approach introduced a new perspective to being black in America or finding success sooner rather than later. These ideas wont die, regardless of whether Gambino is putting out singles. Equally, the complexity of timeless topics means that listeners may discover another meaning or understanding to the music he has put out years later. Really, we should just be grateful we had him for the time we did.</p>
-      </div>
+        <div id="article-content" class="article"></div>
+      </div>  
+      <!--<div id="load_here" class="blackb" style="height: 100px;"><p class="article-text fsc">Buffer</p></div>-->
     </div>
-    
 
-
-
-    
     <div class="container-fluid bottom-bar"> 
      
      <!-- Bottom Bar Links -->
       <div class="row white bottom-bar-btns">
-        <a href="circus_2.html" class="bottom-bar-link" role="button">
+        <a href="#" class="bottom-bar-link" role="button">
           <div class="col-xs-20"> Home </div>
         </a>
         <a href="lyrics.html" class="bottom-bar-link" role="button">
@@ -104,12 +108,121 @@
         ><div class="row-decoration" style="width: 10%; background-color: #F78416"></div
       ></div>
     </div>
+    
+    <script>
+    function load_query() { 
+      if(location.search.length != 0){
+        var query;
+        var queries = location.search.substring(1).split("&");
+        for(x=0; x<queries.length;x++) {
+          query = queries[x].split("=");
+          name = unescape(query[0]);
+          value = unescape(query[1]);
+          if(name == "article") {
+            return value; 
+          } 
+        }
+      }
+    }; 
 
+    function xhr_load_xml(url) {
+      url = "http://localhost:8080/home/" + url;
+      var xhr;
+      if (window.XMLHttpRequest) { xhr = new XMLHttpRequest(); }
+      else { xhr = new ActiveXObject("Microsoft.XMLHTTP"); } // code for older browsers
+      xhr.onreadystatechange = function() { // Asynchronus load xml
+        if (this.readyState == 4 && this.status == 200) { // but when finished add content
+          var parser = new DOMParser();
+          var xmldoc = parser.parseFromString(this.responseText,"text/xml");
 
+          set_data("author", retrieve_data(xmldoc, "author"));
+          set_data("article-title", retrieve_data(xmldoc, "title"));
+          set_data("date", retrieve_data(xmldoc, "date"));
+          set_data("article-content", retrieve_data(xmldoc, "content"));
+          set_data("article-img", retrieve_data(xmldoc, "photo"));
+          //document.getElementById("article-img").src = retrieve_data(xmldoc, "photo");
+        }
+      }
+      xhr.open("GET", url, true);
+      xhr.send();
+    };
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    function set_data(id, value) {
+      if(id == "article-img") { document.getElementById(id).src = value; } 
+      else{ document.getElementById(id).innerHTML = value; }
+    };
+    function retrieve_data(xmldoc, tag) {
+      return xmldoc.getElementsByTagName(tag)[0].childNodes[0].nodeValue;
+    };
+
+    xhr_load_xml(load_query()); 
+    </script>
   </body>
 </html>
+<!-- var nodes = xmldoc.firstChild.getElementsByTagName("webpage")[0].childNodes;
+    var art = xmldoc.getElementsByTagName("author")[0].childNodes;
+    for(x = 0; x < nodes.length; x++) {
+      console.log(nodes[x].nodeName + ": " + nodes[x].nodeValue); //childNodes.length);
+      var kids = nodes[x].childNodes;
+      if(kids != null) {
+        for(y = 0; y < kids.length; y++) {
+          console.log("  " + kids[y].nodeName + ": " + kids[y].nodeValue);
+        }
+      }
+    } 
+    console.log("iuadsf")
+    for(x = 0; x < art.length; x++) {
+      console.log(art[x].nodeName); //childNodes.length);
+    } 
+
+    document.getElementById("load_here").innerHTML = xmldoc.getElementsByTagName("content")[0].childNodes[0].nodeValue;
+-->
+<!--
+    <script type="text/javascript">
+    
+      function make_request(name, url) {
+        url = "http://localhost:8080/home/" + url;
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+          xmlhttp = new XMLHttpRequest();
+        } else {
+          // code for older browsers
+          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        //xmlhttp.onreadystatechange = function() {
+        //  if (this.readyState == 4 && this.status == 200) {
+        //    document.getElementById(name).innerHTML = this.responseText;
+        //  } else {
+        //    alert("error: page not ready")
+        //  }
+        //};
+        xmlhttp.onload = function () {
+          document.getElementById(name).innerHTML = this.responseText;
+        }
+        xmlhttp.onerror = function() {
+         alert('There was an error! Error code: ' + xmlhttp.status);
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
+      function load_query() { 
+        if(location.search.length != 0){
+          var query;
+          var queries = location.search.substring(1).split("&");
+          for(x=0; x<queries.length;x++) {
+            query = queries[x].split("=");
+            name = unescape(query[0]);
+            value = unescape(query[1]);
+            if(name == "article-img") {
+              alert("changing image")
+              document.getElementById(name).src = value; 
+            } else{
+              alert("changing content")
+              make_request(name, value);
+            }
+          }
+        }
+      }; 
+
+      load_query(); 
+    </script> -->
