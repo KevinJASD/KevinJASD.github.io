@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hollow</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="hollow.css" rel="stylesheet">  <!-- for running local -->
+  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+
+  <body>
+
+    <!--The bonkers logo should be the word bonkers in script font -->
+    <!-- Website should be simple. Light "bitch blue" background with white accent. White in middle with Bonkers logo, which you press and plays the song of the day -->
+    <div id='logo'> <h1 id='logo_header'>  
+                          <span>H</span
+                          ><span>o</span
+                          ><span>l</span
+                          ><span>l</span
+                          ><span>o</span
+                          ><span>w</span>
+                    </h1> 
+    </div>
+
+     <!--<div id='soundcloud' style="background-color: black;"> DIV </div>
+    -->
+    <iframe id='soundcloud'width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269814706&amp;color=%232b2b2b&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+ 
+  </body>
+
+
+  <script>
+  $(document).ready(function() {
+    $('#soundcloud').hide();
+
+    var elem = document.getElementById("logo");   
+    var pos = 50;
+    var slideid;
+    setTimeout(function () { slideid = setInterval(frame, 50); },1400);
+
+    function frame() {
+      if (pos >= 70) {
+        clearInterval(slideid);
+        $('#soundcloud').fadeIn();  // show soundcloud one logo has moved
+
+      } else {
+        pos = pos + 1; 
+        elem.style.top = pos + '%'; 
+      }
+    };    
+  
+    var cycleid; 
+    var kill = false;
+    //$('h1').click(function() { $('h1').css("color", "red");});
+
+    $('h1').click(function() {
+      var delay = 100;
+      var children = $('h1').children();
+      var colors = ['#ff0000', '#fe761b', '#f2f900', '#00ff00', '#0099cc', '#d11aff'];
+      
+      if(cycleid == undefined ) { 
+        kill = false;
+        color();    // to prevent time delay in intial run
+        cycleid = setInterval(color, 600);
+      } else { 
+        clearInterval(cycleid);
+        kill = true;
+        cycleid = undefined;
+      }
+      
+
+      function color() {       
+        var colorid;
+        for(y = 0;  y < 7; y++) { 
+          (function(j) { colorid = setTimeout(function() { 
+            for(x = 0; x < 6; x++) {
+              if (kill == true) {
+                clearTimeout(colorid);
+                break;
+              } 
+              var temp = x-j;
+              if(temp < 0) { temp = 6 + temp; }
+              $(children[x]).css("color", colors[temp]);    
+            }
+            clearTimeout(colorid);
+          }, delay*(j));} (y)) 
+        };
+      }
+    });
+
+
+    
+  });
+  </script>
+
+
+
+ 
+  </html>

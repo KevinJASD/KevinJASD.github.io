@@ -1,0 +1,44 @@
+ html,body {
+    padding: 0;
+    margin: 0;
+ }
+ body {
+ 	color: white;
+    background: linear-gradient(to bottom right, #4dd2ff, #4dd2d2);
+ } 
+
+ .circle {
+    border-radius: 50%;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#logo {
+    top: 50%; 
+    left: 50%;
+    color: white;
+    position: absolute; 
+    border-radius: 50%;
+    background: radial-gradient(#00bfff, #4dd2ff);
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+}
+
+#logo h1 {
+    font-family: Courier, monospace, Times;
+}
+
+#soundcloud {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: auto;
+    height: 20%;
+    display: none;
+    transform: translate(-50%, -50%);
+}
